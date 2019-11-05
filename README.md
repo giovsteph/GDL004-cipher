@@ -2,7 +2,7 @@
 
 ## **REBEL CIPHER**
 
-![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Rebel_Alliance_logo.svg/1024px-Rebel_Alliance_logo.svg.png "logo")
+![alt text](https://cdn0.iconfinder.com/data/icons/movies-8/64/rebel_alliance_hollywood_cinema_film-128.png "logo")
 
 ### 1. Tema Elegido
 #### Mensajería Cifrada para uso de la Alianza Rebelde
