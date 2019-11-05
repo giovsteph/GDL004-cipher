@@ -44,15 +44,15 @@ Describir de forma simple, las acciones que realizará el programa.
 * Botón cifrar recibe string y número
 * Botón descifrar recibe string y número
 * Recibir un valor string
-..* Bloquear introducción de números y convertir automáticamente a mayus.
-..* Recibir valor númerico seleccionado del menú desplegable
+* Bloquear introducción de números y convertir automáticamente a mayus.
+* Recibir valor númerico seleccionado del menú desplegable
 * Para cifrar
-..* Desplazar los caracteres de acuerdo al número seleccionado
-..* Mostrar mensaje cifrado
+* Desplazar los caracteres de acuerdo al número seleccionado
+* Mostrar mensaje cifrado
 * Para descifrar
-..* Desplazar de regreso los caracteres de acuerdo al numero seleccionado
-..* Mostrar mensaje descifrado
-..* Agregar UI (Volver a comenzar).
+* Desplazar de regreso los caracteres de acuerdo al numero seleccionado
+* Mostrar mensaje descifrado
+* Agregar UI (Volver a comenzar).
 
 
 ### 6. FeedBack
