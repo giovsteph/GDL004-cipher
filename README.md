@@ -33,10 +33,37 @@ ___
 
 ![alt text](https://lh3.googleusercontent.com/20pt6EioE609APW-l0_2zibIdh4hRZo0Cc3QjUj7jdep-X9lePPRTMdPqBg5eBJ5KSywsydUndvvRvKQiltgBs3VdPxSD8Ua4pTnmjJJpyE6EeYdOdOmA9IfyeJjk0NJ12v-UrsZyAA0qCvOLM08Ts-fGNI_VE-p0VBpH1H_sw3p5npu2hl1w8vDbyHzO9BHGI7Cq9XtfIcTI_Ch-gfTvNsJMFGy7cIEtvibggJ1_0WyJ8kdM3hYzkfhVyrz-E8QSIvb2JFEUu3qHUphMW8jxr2Cmro25SofCVQBZk9aT859LN-nMl7UlrGoxhoYK4sqZO9bJMhFcsT9zb2j8x6aubwsxQd4z383-XJPF9VMXkp_eiJyyDVdokouACcLPA4TsRNFKvzD27oFzgEQfAXPKTDRmOCT2CxNZASGRyQ2rwOkxwB_JzIKBfzLqmGQmF5H_8sjLD2hGjLOTVWCkD1I04fa7DsH6LKYrAsjcoaCU6F_XS9A4U7OThjKoH6jsS3pUeO9fFEAqAAyVNTy8gnez5anpcQPQgcjP0LaohZKtxlxe6wimIPoGojxh8rBD4FYwGulu2Iyg1TWjxx8RmStHyR7B8Yl0OiwSiusYVjIdh367EFKOwf23Oog5yxpExfSaIWdHiMfqXPpHD235JggcgsXJtYBgPWN_7Tfqkk8CLMWvy39YXgDAudi=w948-h757-no "primerproto")
 ___
-### 5. FeedBack
+### 5. Diagrama de Flujo y Pseudocódigo
+
+![alt text](https://lh3.googleusercontent.com/yDU4JK06-mYgL5_Y4rSQDxpKCHRSxksZgEq_dWP5D540Yzo_aQNtaUxd5fOE2PG3QCewooFfEVZ3JByRlEfmSR5inr9YJ95FaSJwEBjjihriNECvgCDoQX8QLz8mZZU8LTXGdFRFSdEteTPETRKFZB7en6dGMDULs4QyQeeR8KI5KH9mmP7N-Dt1UoTjHGBFp02tOlcfd2dT4FZA-HKwXzFm5fGvjbUDHKyQUfUSi5OQPXC4TV5-Qewss3WNJip37JzFtABUt2DFSQh67op6sZ-XN2OQw6r56_xO1yH91U7M_5P8YMxtEYDt5p03JpTmgC11MxBc7yfAvdjVPevXCfE0ggVWRHrzYDACiX7XgY54RvMYAgNpa-JrC043_jU_9jEcxgHYtqtt7U9Drwe2L2qsRDDx5kc1OCqpstmLprqaHlcpJ5TSoCLgwdE1toP-KAwfXfvI0NymNp6_M8w1gHjD75cg0FjO9_QwPV1f1vgNffr9stOpBSwQ3SunspdnO_vlurV-MSpH7i435hThfsM_qAbRarZSbJO29ShVELtYYHL7OMYPmKHhFQpw7OX6jipZ1lMg-PHgrNjYnm9fgys77A3qfgOr-mOZvHl7pxG-pygzqEtVTyXCpppvYxBF-UBEISH3kn0WrE11aSGsG-oM0W49AU0dTMQYdxrBcyg7zm23N3dql2oH=w773-h708-no "diagrama")
+
+#### PseudoCódigo
+
+Describir de forma simple, las acciones que realizará el programa.
+* Agregar UI (Cifrar / Descifrar)
+* Botón cifrar recibe string y número
+* Botón descifrar recibe string y número
+* Recibir un valor string
+..* Bloquear introducción de números y convertir automáticamente a mayus.
+..* Recibir valor númerico seleccionado del menú desplegable
+* Para cifrar
+..* Desplazar los caracteres de acuerdo al número seleccionado
+..* Mostrar mensaje cifrado
+* Para descifrar
+..* Desplazar de regreso los caracteres de acuerdo al numero seleccionado
+..* Mostrar mensaje descifrado
+..* Agregar UI (Volver a comenzar).
+
+
+### 6. FeedBack
 #### Squad
 
+
+
+
 #### Coaches
+
+De
 ___
 ### 6. Prototipo Final
 **Prototipo realizado en software Adobe XD**
