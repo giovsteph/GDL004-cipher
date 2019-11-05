@@ -2,16 +2,20 @@
 
 ## **REBEL CIPHER**
 
+![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Rebel_Alliance_logo.svg/1024px-Rebel_Alliance_logo.svg.png "logo")
 
 ### 1. Tema Elegido
 #### Mensajería Cifrada para uso de la Alianza Rebelde
 
-
-Si Leia cifra un mensaje con su llave privada, Luke solo podrá descifrar el mensaje si se le proporciona dicha clave,  lo cual asegura la confidencialidad y protección ante la amenaza del Imperio
-
+Si Leia cifra un mensaje con su llave privada, Luke solo podrá descifrar el mensaje si se le proporciona dicha clave,  lo cual asegura la confidencialidad y protección ante la amenaza del Imperio.
+___
 ### 2. Descripción del Proyecto
 
-Escribir aqui mi descripción
+Página para cifrar mensajes de la alianza. 
+El usuario selecciona una codificación e introduce un mensaje, la página le genera el mensaje codificado.
+El usuario envia el mensaje codificado, proporcionando la clave, que es un número del 1 al 20.
+El receptor selecciona la clave (codificación) e introduce el mensaje codificado.
+La página le entrega el mensaje decodificado.
 ___
 ### 3. Investigación UX
 #### Main User:
@@ -33,7 +37,7 @@ ___
 #### Coaches
 ___
 ### 6. Prototipo Final
-**Prototipo realizado en software Adobe XD***
+**Prototipo realizado en software Adobe XD**
 
 #### Prototipo de la parte CIPHER.
 
