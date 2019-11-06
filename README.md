@@ -58,12 +58,12 @@ Describir de forma simple, las acciones que realizará el programa.
 ### 6. FeedBack
 #### Squad
 
-
-
+El feedback que recibí sobre mi prototipo por parte de mi squad me hizo darle un mejor acomodo para facilitar el uso de la página web.
+Además, se me comentó que se vería mejor si se pusieran solo letras en los títulos y no números como se mostraba en el prototipo inicial y creo que eso ayudó mucho a que se viera mejor la página.
 
 #### Coaches
 
-De
+Recibí feedback sobre la forma de organizar mi trabajo en el tablero kan-ban y la forma de dividir tareas. Además, me fue de gran utilidad su apoyo a lo largo del proyecto :)
 ___
 ### 6. Prototipo Final
 **Prototipo realizado en software Adobe XD**
@@ -78,4 +78,6 @@ ___
 ___
 ### 7. Conclusiones
 
+En este proyecto me divertí mucho descubriendo como realizar cada una de las tareas requeridas, y siento que cumplí los objetivos de aprendizaje. 
+Ha sido muy satisfactorio lograr lo que me propongo mediante la organización de mis tareas y aunque requerí mayormente la parte técnica, no lo hubiera logrado sin los soft skills que nos han instruido en el poco tiempo que lleva el bootcamp.
 ___
