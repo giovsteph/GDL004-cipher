@@ -1,5 +1,5 @@
-//window.cipher = {
-encode /*:*/ = () => {
+window.cipher = {
+    encode: () => {
         document.getElementById("msgToCipherScrn").style.display = "none";
         document.getElementById("cipheredMsgScrn").style.display = "block";
         let result = "";
@@ -13,6 +13,7 @@ encode /*:*/ = () => {
                 let a = text1[i].charCodeAt(0);
                 let e = (((a - 65 + shift1) % 26) + 65);
                 result = result + String.fromCharCode(e).toUpperCase();
+
             } else if (text1[i] == text1[i].toLowerCase()) {
                 let a = text1[i].charCodeAt(0);
                 let e = (((a - 97 + shift1) % 26) + 97);
@@ -24,7 +25,7 @@ encode /*:*/ = () => {
         document.getElementById("transmission").innerHTML = result;
     },
 
-    decode /*:*/ = () => {
+    decode: () => {
         document.getElementById("msgToDecipherScrn").style.display = "none";
         document.getElementById("decipheredMsgScrn").style.display = "block";
         let resultDec = "";
@@ -49,4 +50,4 @@ encode /*:*/ = () => {
         document.getElementById("transmissionDec").innerHTML = resultDec;
     }
 
-//};
+};

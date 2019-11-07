@@ -44,5 +44,5 @@ const restrt = () => {
     document.getElementById("strtScrn").style.display = "block";
 }
 
-document.getElementById("cipherBegin").addEventListener("click", encode);
-document.getElementById("decipherBegin").addEventListener("click", decode);
+document.getElementById("cipherBegin").addEventListener("click", window.cipher.encode); // SE DEBE LLAMAR EL OBJETO
+document.getElementById("decipherBegin").addEventListener("click", window.cipher.decode);
