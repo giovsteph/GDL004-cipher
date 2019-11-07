@@ -11,80 +11,78 @@
 
 <body>
 
-    <div id=strtScrn>
-        <h1 id="mainTitle">REBEL CIPHER</h1>
-        <p id="rebelMsg">
-            We, the Rebel Alliance, do therefore in the name—and by the authority—of the free beings of the Galaxy, solemnly publish and declare our intentions:</p>
-        <ul id="rebelMsgList">
-            <li>To fight and oppose you and your forces, by any and all means at our disposal.</li>
-            <li>To refuse any Imperial law contrary to the rights of free beings.</li>
-            <li>To bring about your destruction and the destruction of the Galactic Empire.</li>
-            <li>To make forever free all beings in the galaxy.</li>
-        </ul>
-        <p id="rebelMsgTwo">To these ends, we pledge our property, our honor, and our lives.
-        </p>
+    <div id="root">
+        <div id=strtScrn>
+            <h1 id="mainTitle">REBEL CIPHER</h1>
+            <p id="rebelMsg">
+                We, the Rebel Alliance, do therefore in the name—and by the authority—of the free beings of the Galaxy, solemnly publish and declare our intentions:</p>
+            <ul id="rebelMsgList">
+                <li>To fight and oppose you and your forces, by any and all means at our disposal.</li>
+                <li>To refuse any Imperial law contrary to the rights of free beings.</li>
+                <li>To bring about your destruction and the destruction of the Galactic Empire.</li>
+                <li>To make forever free all beings in the galaxy.</li>
+            </ul>
+            <p id="rebelMsgTwo">To these ends, we pledge our property, our honor, and our lives.
+            </p>
 
-        <br><input type="button" onclick="strtGame()" value="START" id=strtBtn class=btn>
+            <br><input type="button" onclick="strtGame()" value="START" id=strtBtn class=btn>
+        </div>
+
+
+        <div id=selectionScrn>
+            <h1 id="mainTitle">REBEL CIPHER</h1>
+            <h2 id="subtitle">Choose an option</h2>
+            <input type="button" onclick="beginCipher()" id="strtCipher" value=Cipher class=btn>
+            <input type="button" onclick="beginDecipher()" id="strtDecipher" value=Decipher class=btn>
+        </div>
+
+
+        <div id=cipherScrn>
+            <h1 id="mainTitle">CIPHER</h1>
+            <h2 id="subtitle">Please Select Offset</h2>
+            <input type=number name="selectOffset" id="shiftNmbr" min="1" max="20" class=nmbrInput required>
+            <input type="button" id="continueToMsgInput" onclick="continueToMsgCipherInput()" value="Continue" class=btn>
+        </div>
+
+
+        <div id=msgToCipherScrn>
+            <h1 id="subtitle">Write Your Message Here</h1>
+            <p>Do not use spaces, numbers or special characters, they won't be coded</p>
+            <input type="text" id="msgToCode" class=txtInput placeholder="SPHINX OF BLACK QUARTZ, JUDGE MY VOW" required>
+            <!--BOTON CIFRADO-->
+            <input type="button" id="cipherBegin" value="Continue" class=btn>
+        </div>
+
+
+
+        <div id=cipheredMsgScrn>
+            <h1 id="mainTitle">Coded Transmission</h1>
+            <p id="transmission">The coded message will be shown here</p>
+            <input type="button" onclick="restrt()" id="rstrt" value="Restart">
+        </div>
+
+
+        <div id=decipherScrn>
+            <h1 id="mainTitle">DECIPHER</h1>
+            <h2 id="subtitle">Please Select Used Offset</h2>
+            <h3>Note: If you don't know the used offset, you won't be able to decipher the message!</h3>
+            <input type=number name="Select Offset" id="shiftNmbrDec" min="1" max="20" class=nmbrInput required>
+            <input type="button" onclick="continueToMsgDecipherInput() " id="continueToMsgInput" value="Continue" class=btn>
+        </div>
+
+        <div id=msgToDecipherScrn>
+            <h1 id="subtitle">Place Your Coded Message Here</h1>
+            <input type="text" name="Message" id="msgToDecode" class=txtInput placeholder="ABC" required>
+            <input type="button" id="decipherBegin" value="Continue" class=btn>
+        </div>
+
+        <div id=decipheredMsgScrn>
+            <h1 id="mainTitle">Decoded Tranmission</h1>
+            <p id="transmissionDec">The decoded message will be shown here</p>
+            <input type="button" onclick="restrt()" id="rstrt" value="Restart" class=btn>
+        </div>
+
     </div>
-
-
-    <div id=selectionScrn>
-        <h1 id="mainTitle">REBEL CIPHER</h1>
-        <h2 id="subtitle">Choose an option</h2>
-        <input type="button" onclick="beginCipher()" id="strtCipher" value=Cipher class=btn>
-        <input type="button" onclick="beginDecipher()" id="strtDecipher" value=Decipher class=btn>
-    </div>
-
-
-    <div id=cipherScrn>
-        <h1 id="mainTitle">CIPHER</h1>
-        <h2 id="subtitle">Please Select Offset</h2>
-        <input type=number name="selectOffset" id="shiftNmbr" min="1" max="20" class=nmbrInput required>
-        <input type="button" id="continueToMsgInput" onclick="continueToMsgCipherInput()" value="Continue" class=btn>
-    </div>
-
-
-    <div id=msgToCipherScrn>
-        <h1 id="subtitle">Write Your Message Here</h1>
-        <p>Do not use spaces, numbers or special characters, they won't be coded</p>
-        <input type="text" id="msgToCode" class=txtInput placeholder="SPHINX OF BLACK QUARTZ, JUDGE MY VOW" required>
-        <!--BOTON CIFRADO-->
-        <input type="button" id="cipherBegin" value="Continue" class=btn>
-    </div>
-
-
-
-    <div id=cipheredMsgScrn>
-        <h1 id="mainTitle">Coded Transmission</h1>
-        <p id="transmission">The coded message will be shown here</p>
-        <input type="button" onclick="restrt()" id="rstrt" value="Restart">
-    </div>
-
-
-    <div id=decipherScrn>
-        <h1 id="mainTitle">DECIPHER</h1>
-        <h2 id="subtitle">Please Select Used Offset</h2>
-        <h3>Note: If you don't know the used offset, you won't be able to decipher the message!</h3>
-        <input type=number name="Select Offset" id="shiftNmbrDec" min="1" max="20" class=nmbrInput required>
-        <input type="button" onclick="continueToMsgDecipherInput() " id="continueToMsgInput" value="Continue" class=btn>
-    </div>
-
-    <div id=msgToDecipherScrn>
-        <h1 id="subtitle">Place Your Coded Message Here</h1>
-        <input type="text" name="Message" id="msgToDecode" class=txtInput placeholder="ABC" required>
-        <input type="button" id="decipherBegin" value="Continue" class=btn>
-    </div>
-
-    <div id=decipheredMsgScrn>
-        <h1 id="mainTitle">Decoded Tranmission</h1>
-        <p id="transmissionDec">The decoded message will be shown here</p>
-        <input type="button" onclick="restrt()" id="rstrt" value="Restart" class=btn>
-    </div>
-
-
-
-
-
     <script src="cipher.js "></script>
     <script src="index.js "></script>
 </body>

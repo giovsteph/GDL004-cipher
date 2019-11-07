@@ -43,3 +43,6 @@ const restrt = () => {
     document.getElementById("decipheredMsgScrn").style.display = "none";
     document.getElementById("strtScrn").style.display = "block";
 }
+
+document.getElementById("cipherBegin").addEventListener("click", encode);
+document.getElementById("decipherBegin").addEventListener("click", decode);
