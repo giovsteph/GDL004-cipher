@@ -1,8 +1,9 @@
 window.cipher = {
-    encode: () => {
+
+    encode: (shift, text) => {
         let result = "";
-        let shift = Number(document.getElementById("shiftNmbr").value);
-        let text = String(document.getElementById("msgToCode").value);
+        shift = Number(document.getElementById("shiftNmbr").value);
+        text = String(document.getElementById("msgToCode").value);
 
         for (let i = 0; i < text.length; i++) {
             if (text[i] == text[i].toUpperCase()) {
@@ -23,24 +24,23 @@ window.cipher = {
         document.getElementById("transmission").innerHTML = result;
     },
 
-    decode: () => {
+    decode: (shiftDec, textDec) => {
         let resultDec = "";
-        let shiftDec = document.getElementById("shiftNmbrDec").value;
-        let textDec = document.getElementById("msgToDecode").value;
-        let shiftDec1 = Number(shiftDec);
-        let textDec1 = String(textDec);
+        shiftDec = Number(document.getElementById("shiftNmbrDec").value);
+        textDec = String(document.getElementById("msgToDecode").value);
 
-        for (let i = 0; i < textDec1.length; i++) {
-            if (textDec1[i] == textDec1[i].toUpperCase()) {
-                let a = textDec1[i].charCodeAt(0);
-                let e = (((a - 65 - shiftDec1) % 26) + 65);
-                resultDec = resultDec + String.fromCharCode(e).toUpperCase();
-            } else if (textDec1[i] == textDec1[i].toLowerCase()) {
-                let a = textDec1[i].charCodeAt(0);
-                let e = (((a - 97 - shiftDec1) % 26) + 97);
+
+        for (let i = 0; i < textDec.length; i++) {
+            if (textDec[i] == textDec[i].toUpperCase()) {
+                let a = textDec[i].charCodeAt(0);
+                let e = (((a - 65 - shiftDec) % 26) + 65);
+                resultDec = resultDec + String.fromCharCode(e);
+            } else if (textDec[i] == textDec[i].toLowerCase()) {
+                let a = textDec[i].charCodeAt(0);
+                let e = (((a - 97 - shiftDec) % 26) + 97);
                 resultDec = resultDec + String.fromCharCode(e);
             } else {
-                resultDec = resultDec + textDec1[i];
+                resultDec = resultDec + textDec[i];
             }
         }
         document.getElementById("msgToDecipherScrn").style.display = "none";
