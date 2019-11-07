@@ -28,6 +28,8 @@ Al considerar las necesidades de los _usuarios principales_, se creará una inte
 Se necesita comunicarse a traves del espacio, dichas transmisiones pueden ser interceptadas, lo cual puede generar problemas al momento de generar estrategias de ataque, es necesario que estén codificadas para que el _Imperio_ no las entienda.
 #### Solución
 Sistema de codificación _en línea_ simple, discreto y ligero.
+#### Paleta de Colores
+![coloresPaleta](https://i.ibb.co/17Cn1XQ/colores.png)]
 ___
 ### 4. Primer Prototipo
 
