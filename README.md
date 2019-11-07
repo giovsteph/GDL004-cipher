@@ -29,7 +29,7 @@ Se necesita comunicarse a traves del espacio, dichas transmisiones pueden ser in
 #### Solución
 Sistema de codificación _en línea_ simple, discreto y ligero.
 #### Paleta de Colores
-![coloresPaleta](https://i.ibb.co/17Cn1XQ/colores.png)]
+![coloresPaleta](https://i.ibb.co/17Cn1XQ/colores.png)
 ___
 ### 4. Primer Prototipo
 
