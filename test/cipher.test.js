@@ -12,12 +12,12 @@ describe('cipher.encode', () => {
         expect(typeof cipher.encode).toBe('function');
     });
     //Test Mayusculas
-    it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33', () => {
-        expect(cipher.encode(33, "ABCDEFGHIJKLMNOPQRSTUVWXYZ")).toEqual("HIJKLMNOPQRSTUVWXYZABCDEFG");
+    it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 19', () => {
+        expect(cipher.encode(19, "ABCDEFGHIJKLMNOPQRSTUVWXYZ")).toEqual("HIJKLMNOPQRSTUVWXYZABCDEFG");
     });
     //Test Minusculas
-    it('debería retornar "hijklmnopqrstuvwxyzabcdefg" para "abcdefghijklmnopqrstuvwxyz" with offset 33', () => {
-        expect(cipher.encode(33, 'abcdefghijklmnopqrstuvwxyz')).toEqual('hijklmnopqrstuvwxyzabcdefg');
+    it('debería retornar "hijklmnopqrstuvwxyzabcdefg" para "abcdefghijklmnopqrstuvwxyz" with offset 19', () => {
+        expect(cipher.encode(19, 'abcdefghijklmnopqrstuvwxyz')).toEqual('hijklmnopqrstuvwxyzabcdefg');
     });
 });
 

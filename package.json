@@ -1,37 +1,35 @@
 {
-  "name": "cipher",
-  "version": "1.0.0",
-  "main": "src/index.html",
-  "license": "MIT",
-  "scripts": {
-    "htmlhint": "htmlhint src/*.html test/*.html",
-    "eslint": "eslint --ext .js src/ test/",
-    "pretest": "npm run eslint && npm run htmlhint",
-    "test": "jest --verbose --coverage",
-    "open-coverage-report": "opener ./coverage/lcov-report/index.html",
-    "start": "serve ./src"
-  },
-  "dependencies": {
-    "eslint": "^5.9.0",
-    "htmlhint": "^0.11.0",
-    "opener": "^1.5.1",
-    "serve": "^11.0.0"
-  },
-  "description": "![alt text](https://lh3.googleusercontent.com/9XKgLWecXp5JPVlETWV9D48X62dZvASvDUrgnKxxlFQW4rH90GEXtPZ7tBqyX8mY8el2fNSDRb0w_cbdFOhQKjdmCVAzY6ztfWBEuMa-vuaTsokgsBbwNO3HR19H2gwlIVEdtu_GnDNA11gkYY1JXcdHUdxGajB2Rp0MGZxXHgto51TZYF5WtNHAoOsEf3zq6I6XvZJJEp-bnjKy8xLB1Lp6eg9Q6ozruDvheKd0LgzRWfQuuPa0uH0qWaRyrREcl91zgWowXzeqQxL-E4SejkrZnUHGr4U9ZKVv2tNhvha8mGHqCWZEQi2ynCauY_xdpDP5Hb81Fm-Ps4wi66Kj2QQ734ZNlmj9ouh-zZNccyrzG7-K0Hmf8CcQAWmipDp_HX9rGdmxz6eCaIy7BjlCnNqpQo9t9NG5yGyPTRKaD8_QXTpMgS7b9kxXbF3Rkgq7zBnQ5WU0mwzKXQdk96HPc4eD6cBXCyz96jKqnd5uQGLviXnry19vitqjZuQUeLpcOTUIaKfqdEfpTeef4Zj4aU16JDyCp-1lIL7PCudYZW_NFfnilEikLqtK0gHXFySjlcJbYO-s5rJPQirc6V4SlvsmB9Tk9nHBMvzxHy-tUtfTKNlyp_gq7dNDo99toh63s-VNpgpgwLmNC_fF035UOY8l8XtxpNJKhkHlT-xA60ftPKKNSvq8i0z7=w607-h289-no \"title\")",
-  "directories": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/giovsteph/GDL004-cipher.git"
-  },
-  "keywords": [],
-  "author": "",
-  "bugs": {
-    "url": "https://github.com/giovsteph/GDL004-cipher/issues"
-  },
-  "homepage": "https://github.com/giovsteph/GDL004-cipher#readme",
-  "devDependencies": {
-    "jest": "^24.9.0"
-  }
+    "name": "cipher",
+    "version": "1.0.0",
+    "main": "src/index.html",
+    "license": "MIT",
+    "scripts": {
+        "htmlhint": "htmlhint src/*.html test/*.html",
+        "eslint": "eslint --ext .js src/ test/",
+        "pretest": "npm run eslint && npm run htmlhint",
+        "test": "jest --verbose --coverage",
+        "open-coverage-report": "opener ./coverage/lcov-report/index.html",
+        "start": "serve ./src"
+    },
+    "dependencies": {
+        "eslint": "^5.9.0",
+        "htmlhint": "^0.11.0",
+        "opener": "^1.5.1",
+        "jest": "^24.9.0",
+        "serve": "^11.0.0"
+    },
+    "description": "![alt text](https://lh3.googleusercontent.com/9XKgLWecXp5JPVlETWV9D48X62dZvASvDUrgnKxxlFQW4rH90GEXtPZ7tBqyX8mY8el2fNSDRb0w_cbdFOhQKjdmCVAzY6ztfWBEuMa-vuaTsokgsBbwNO3HR19H2gwlIVEdtu_GnDNA11gkYY1JXcdHUdxGajB2Rp0MGZxXHgto51TZYF5WtNHAoOsEf3zq6I6XvZJJEp-bnjKy8xLB1Lp6eg9Q6ozruDvheKd0LgzRWfQuuPa0uH0qWaRyrREcl91zgWowXzeqQxL-E4SejkrZnUHGr4U9ZKVv2tNhvha8mGHqCWZEQi2ynCauY_xdpDP5Hb81Fm-Ps4wi66Kj2QQ734ZNlmj9ouh-zZNccyrzG7-K0Hmf8CcQAWmipDp_HX9rGdmxz6eCaIy7BjlCnNqpQo9t9NG5yGyPTRKaD8_QXTpMgS7b9kxXbF3Rkgq7zBnQ5WU0mwzKXQdk96HPc4eD6cBXCyz96jKqnd5uQGLviXnry19vitqjZuQUeLpcOTUIaKfqdEfpTeef4Zj4aU16JDyCp-1lIL7PCudYZW_NFfnilEikLqtK0gHXFySjlcJbYO-s5rJPQirc6V4SlvsmB9Tk9nHBMvzxHy-tUtfTKNlyp_gq7dNDo99toh63s-VNpgpgwLmNC_fF035UOY8l8XtxpNJKhkHlT-xA60ftPKKNSvq8i0z7=w607-h289-no \"title\")",
+    "directories": {
+        "test": "test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/giovsteph/GDL004-cipher.git"
+    },
+    "keywords": [],
+    "author": "",
+    "bugs": {
+        "url": "https://github.com/giovsteph/GDL004-cipher/issues"
+    },
+    "homepage": "https://github.com/giovsteph/GDL004-cipher#readme"
 }

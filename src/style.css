@@ -7,7 +7,7 @@ body {
     text-align: center;
 }
 
-#mainTitle {
+.mainTitle {
     font-family: "Death Star", serif;
     font-size: 4em;
     color: #D4AF37;
@@ -29,12 +29,17 @@ body {
     text-align: justify;
 }
 
-#subtitle {
+.subtitle {
     font-size: 2em;
     color: #508097;
 }
 
 #transmission {
+    font-size: 1em;
+    color: #465565;
+}
+
+#transmissionDec {
     font-size: 1em;
     color: #465565;
 }

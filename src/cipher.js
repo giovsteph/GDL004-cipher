@@ -1,33 +1,29 @@
 window.cipher = {
     encode: () => {
-        document.getElementById("msgToCipherScrn").style.display = "none";
-        document.getElementById("cipheredMsgScrn").style.display = "block";
         let result = "";
-        let shift = document.getElementById("shiftNmbr").value;
-        let text = document.getElementById("msgToCode").value;
-        let shift1 = Number(shift);
-        let text1 = String(text);
+        let shift = Number(document.getElementById("shiftNmbr").value);
+        let text = String(document.getElementById("msgToCode").value);
 
-        for (let i = 0; i < text1.length; i++) {
-            if (text1[i] == text1[i].toUpperCase()) {
-                let a = text1[i].charCodeAt(0);
-                let e = (((a - 65 + shift1) % 26) + 65);
-                result = result + String.fromCharCode(e).toUpperCase();
+        for (let i = 0; i < text.length; i++) {
+            if (text[i] == text[i].toUpperCase()) {
+                let a = text[i].charCodeAt(0);
+                let e = (((a - 65 + shift) % 26) + 65);
+                result = result + String.fromCharCode(e);
 
-            } else if (text1[i] == text1[i].toLowerCase()) {
-                let a = text1[i].charCodeAt(0);
-                let e = (((a - 97 + shift1) % 26) + 97);
+            } else if (text[i] == text[i].toLowerCase()) {
+                let a = text[i].charCodeAt(0);
+                let e = (((a - 97 + shift) % 26) + 97);
                 result = result + String.fromCharCode(e);
             } else {
-                result = result + text1[i];
+                result = result + text[i];
             }
         }
+        document.getElementById("msgToCipherScrn").style.display = "none";
+        document.getElementById("cipheredMsgScrn").style.display = "block";
         document.getElementById("transmission").innerHTML = result;
     },
 
     decode: () => {
-        document.getElementById("msgToDecipherScrn").style.display = "none";
-        document.getElementById("decipheredMsgScrn").style.display = "block";
         let resultDec = "";
         let shiftDec = document.getElementById("shiftNmbrDec").value;
         let textDec = document.getElementById("msgToDecode").value;
@@ -47,6 +43,8 @@ window.cipher = {
                 resultDec = resultDec + textDec1[i];
             }
         }
+        document.getElementById("msgToDecipherScrn").style.display = "none";
+        document.getElementById("decipheredMsgScrn").style.display = "block";
         document.getElementById("transmissionDec").innerHTML = resultDec;
     }
 
