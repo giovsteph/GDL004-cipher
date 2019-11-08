@@ -12,12 +12,12 @@ describe('cipher.encode', () => {
         expect(typeof cipher.encode).toBe('function');
     });
     //Test Mayusculas
-    it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 19', () => {
-        expect(cipher.encode(19, "ABCDEFGHIJKLMNOPQRSTUVWXYZ")).toEqual("HIJKLMNOPQRSTUVWXYZABCDEFG");
+    it('debería retornar "NOPQRSTUVWXYZABCDEFGHIJKLM" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 13', () => {
+        expect(cipher.encode(13, "ABCDEFGHIJKLMNOPQRSTUVWXYZ")).toBe("NOPQRSTUVWXYZABCDEFGHIJKLM");
     });
     //Test Minusculas
-    it('debería retornar "hijklmnopqrstuvwxyzabcdefg" para "abcdefghijklmnopqrstuvwxyz" with offset 19', () => {
-        expect(cipher.encode(19, 'abcdefghijklmnopqrstuvwxyz')).toEqual('hijklmnopqrstuvwxyzabcdefg');
+    it('debería retornar "nopqrstuvwxyzabcdefghijklm" para "abcdefghijklmnopqrstuvwxyz" with offset 13 ', () => {
+        expect(cipher.encode(13, 'abcdefghijklmnopqrstuvwxyz')).toBe('nopqrstuvwxyzabcdefghijklm');
     });
 });
 
@@ -27,12 +27,12 @@ describe('cipher.decode', () => {
         expect(typeof cipher.decode).toBe('function');
     });
     //Test Mayusculas
-    it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33', () => {
-        expect(cipher.decode(33, "ABCDEFGHIJKLMNOPQRSTUVWXYZ").toEqual("HIJKLMNOPQRSTUVWXYZABCDEFG"))
+    it('debería retornar "NOPQRSTUVWXYZABCDEFGHIJKLM" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 13', () => {
+        expect(cipher.decode(13, "NOPQRSTUVWXYZABCDEFGHIJKLM")).toBe("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
     });
     //Test Minusculas
-    it('debería retornar "abcdefghijklmnopqrstuvwxyz" para "hijklmnopqrstuvwxyzabcdefg" with offset 33', () => {
-        expect(cipher.decode(33, 'hijklmnopqrstuvwxyzabcdefg')).toBe('abcdefghijklmnopqrstuvwxyz');
+    it('debería retornar "nopqrstuvwxyzabcdefghijklm" para "abcdefghijklmnopqrstuvwxyz" with offset 13', () => {
+        expect(cipher.decode(13, 'nopqrstuvwxyzabcdefghijklm')).toBe('abcdefghijklmnopqrstuvwxyz');
     });
 
 });
